@@ -3,4 +3,4 @@
 use App\Modules\CatalogModule\Http\Controllers\CatalogProductIndexController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('products', [CatalogProductIndexController::class, 'index']);
+Route::get('v1/catalog/products', [CatalogProductIndexController::class, 'index']);
