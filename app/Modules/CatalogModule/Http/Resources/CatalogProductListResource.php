@@ -4,7 +4,6 @@ namespace App\Modules\CatalogModule\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-use Illuminate\Support\Number;
 
 class CatalogProductListResource extends JsonResource
 {
