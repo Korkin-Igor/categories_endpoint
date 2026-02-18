@@ -18,7 +18,6 @@ class CatalogProductIndexController
             ->when($request->has('is_active'), fn($q) => $q->where('is_active', $request->is_active))
             ->paginate($perPage);
 
-        // 3. Возвращаем коллекцию через ресурс (он автоматически добавит мета-данные пагинации)
         return response()->json(CatalogProductListResource::collection($products)->response()->getData(true));
     }
 
